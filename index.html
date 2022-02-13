@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup-Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="left-pic">
+      <figure>
+        <div class="abs-logo">
+          <div class="img-container"><img src="/odin-lined.png" alt="odin logo"></div>
+        </div>
+        <img src="/dummy-image.jpg" alt="a narrow path in a beautiful forest with a bright orange sunset an the end">
+      </figure>
+      <cite class="photo-credit">Photo by <a
+          href="https://unsplash.com/@supitar_ondrej?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ondrej
+          Supitar</a> on <a
+          href="https://unsplash.com/s/photos/trosky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </cite>
+    </div>
+    <div class="form-container">
+
+      <div class="paragraph-box">
+        <figure>
+          <blockquote cite="https://www.goodreads.com/author/quotes/65974.Leon_Trotsky">
+            <p>Life is not an easy matter…. You cannot live through it without falling into frustration and cynicism
+              unless you have before you a great idea which raises you above personal misery, above weakness, above all
+              kinds of perfidy and baseness.</p>
+          </blockquote>
+          <figcaption>― Leon Trotsky</figcaption><cite>Diary in Exile, 1935</cite>
+        </figure>
+
+      </div>
+      <div class="signup-form-box">
+        <p>Please Sign Up!</p>
+        <form action="post">
+          <div class="left-form">
+            <div class="first-name form-cell">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name"
+                title="Needs atleast 3 characters, Only words allowed" pattern="[a-zA-Z]{3,}"  required>
+            </div>
+
+            <div class="email form-cell">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="password form-cell">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required><span class="pw"></span>
+            </div>
+          </div>
+          <div class="right-form">
+            <div class="last-name form-cell ">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" pattern="[a-zA-Z]{3,}" name="last-name" required>
+            </div>
+
+            <div class="tel form-cell ">
+              <label for="phone-no">Phone Number</label>
+              <input type="tel" id="phone-no" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" name="phone-no"
+                required>
+            </div>
+
+            <div class="confirm-password form-cell ">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button-box">
+        <button type="submit">Create Account</button>
+        <p>Already Have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
